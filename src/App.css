@@ -1,0 +1,29 @@
+/* App.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  background-image: url("./images/herobg.jpg");
+  background-color: #f8f9fa;
+  background-color: #282c34;
+  color: white;
+  background-size: cover;
+  /* align-items: center; */
+  /* width: 100%; */
+}
+
+header ul li {
+  @apply px-2;
+}
+
+.profile {
+  width: 350px;
+  height: 400px;
+}
