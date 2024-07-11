@@ -3,22 +3,21 @@ import { IoMdMail, IoLogoLinkedin, IoLogoGithub } from "react-icons/io";
 
 export default function Herio() {
   return (
-    <section id="Hero" className="flex px-5 py-32 justify-center gap-12 ">
-      <div className="w-1/2 flex flex-col">
-        <h1 className=" text-3xl py-20 font-hero-font">
+    <section id="Hero" className="flex flex-col md:flex-row px-5 py-32 justify-center items-center gap-12">
+      <div className="md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
+        <h1 className="text-3xl py-20 font-hero-font">
           Hi,
           <br />
           <b className="text-5xl">I am Hemanth Kumar V</b>
           <br />
           <p className="text-2xl text-gray-300">MCA</p>
-          <div className="flex gap-5 text-[60px] py-5">
+          <div className="flex gap-5 text-4xl py-5">
             <a
               className="hover:text-gray-500"
               href="mailto:hemanthkumarv2k02@gmail.com?subject=Hello%20there&body=This%20is%20a%20predefined%20email%20body."
             >
               <IoMdMail />
             </a>
-
             <a
               className="hover:text-gray-500"
               href="https://www.linkedin.com/in/hemanth-kumar-655b6a235/"
@@ -32,10 +31,10 @@ export default function Herio() {
               <IoLogoGithub />
             </a>
           </div>
-        </h1>{" "}
+        </h1>
       </div>
 
-      <img class="profile rounded-xl border-black   border-4 border-solid  shadow-lg shadow-zinc-400   hover:shadow-xl  hover:border-dotted " src={bgimage} />
+      <img className="md:w-1/4 profile rounded-xl border-4 border-black border-solid shadow-lg hover:shadow-xl hover:border-dotted" src={bgimage} alt="Profile" />
     </section>
   );
 }
